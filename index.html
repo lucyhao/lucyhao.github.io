@@ -11,146 +11,161 @@
 </head>
 <body>
 
-  <!-- ── Nav ──────────────────────────────────────────────────── -->
-  <nav class="nav">
-    <div class="nav-inner container">
-      <a class="nav-logo" href="#">Hao Li</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </nav>
+  <div class="page-shell">
 
-  <!-- ── Hero ─────────────────────────────────────────────────── -->
-  <section class="hero">
-    <div class="hero-inner container">
+    <!-- ── Sidebar ──────────────────────────────────────────────── -->
+    <aside class="sidebar">
       <img class="avatar" src="images/photo.jpg" alt="Hao Li" />
-      <div class="hero-text">
-        <h1>Hi, I'm Hao Li.</h1>
-        <p class="hero-tagline">
-          I build small, practical apps for the problems real family life keeps throwing at me —
-          currently AllyBaby and GoOutToday.
-        </p>
-      </div>
-    </div>
-  </section>
+      <h1 class="sidebar-name">Hao Li</h1>
+      <p class="sidebar-tagline">
+        I build small, practical apps for the problems real family life keeps throwing at me.
+      </p>
+      <nav class="side-tabs" role="tablist" aria-label="Page sections">
+        <button class="side-tab side-tab--active" role="tab" aria-selected="true" data-tab="about">About</button>
+        <button class="side-tab" role="tab" aria-selected="false" data-tab="projects">Projects</button>
+        <button class="side-tab" role="tab" aria-selected="false" data-tab="contact">Contact</button>
+      </nav>
+    </aside>
 
-  <!-- ── About ────────────────────────────────────────────────── -->
-  <section class="about section" id="about">
-    <div class="container">
-      <div class="section-eyebrow">About</div>
-      <div class="about-body">
-        <p>
-          I'm Hao Li. I spent over a decade as a software engineer across China and Singapore —
-          Qihoo 360, Tencent, Sea, and a mix of other companies big and small along the way.
-        </p>
-        <p>
-          In 2024 we moved to the UK. Back in China I had grandparents to help with childcare; in
-          Singapore, a live-in helper. In the UK, it was just me — and I found out I was pregnant
-          with my second not long after we landed. So I did the obvious thing and became a
-          full-time mom. Turns out it's harder than any job I've ever had. 😂
-        </p>
-        <p>
-          Now that my younger one has just turned one, I've finally clawed back a sliver of time
-          to myself — so I'm back to writing code, one hand on the keyboard and the other on a
-          toddler. And if this whole "working" thing doesn't pan out, I've got a backup plan:
-          move back to my hometown in Sichuan and sell fried potatoes on the street.
-        </p>
-      </div>
-    </div>
-  </section>
+    <!-- ── Content ──────────────────────────────────────────────── -->
+    <main class="content">
 
-  <!-- ── Projects ─────────────────────────────────────────────── -->
-  <section class="projects section" id="projects">
-    <div class="container">
-      <div class="section-eyebrow">Projects</div>
-      <div class="section-header"><h2>What I've built</h2></div>
+      <!-- About -->
+      <section class="tab-panel tab-panel--active" id="tab-about" role="tabpanel">
+        <div class="section-eyebrow">About</div>
+        <div class="about-body">
+          <p>
+            I'm Hao Li. I spent over a decade as a software engineer across China and Singapore —
+            Qihoo 360, Tencent, Garena, and a mix of other companies big and small along the way.
+          </p>
+          <p>
+            In 2024 we moved to the UK. Back in China I had grandparents to help with childcare; in
+            Singapore, a live-in helper. In the UK, it was just me — and I found out I was pregnant
+            with my second not long after we landed. So I did the obvious thing and became a
+            full-time mom. Turns out it's harder than any job I've ever had. 😂
+          </p>
+          <p>
+            Now that my younger one has just turned one, I've finally clawed back a sliver of time
+            to myself — so I'm back to writing code, one hand on the keyboard and the other on a
+            toddler. And if this whole "working" thing doesn't pan out, I've got a backup plan:
+            move back to my hometown in Sichuan and sell fried potatoes on the street.
+          </p>
+        </div>
+      </section>
 
-      <div class="projects-grid">
+      <!-- Projects -->
+      <section class="tab-panel" id="tab-projects" role="tabpanel" hidden>
+        <div class="section-eyebrow">Projects</div>
+        <h2 class="section-title">What I've built</h2>
 
-        <!-- AllyBaby -->
-        <div class="project-card project-card--allybaby">
-          <div class="project-icon">🍼</div>
-          <div class="project-body">
-            <div class="project-top-row">
-              <span class="project-name">AllyBaby</span>
-              <span class="project-tag">Allergy tracker for breastfeeding families</span>
-            </div>
-            <p class="project-desc">
-              Tracks both mom's diet and baby's symptoms to automatically surface which foods in
-              breast milk may be triggering a baby's reactions — the only allergy tracker built
-              specifically for nursing families.
-            </p>
-            <div class="project-story">
-              When my daughter was three months old, she developed eczema — her face and knees
-              turning dry, red, and itchy, until it got bad enough to start weeping. I took her to
-              the GP more times than I can count, but nothing really helped. Since I was
-              exclusively breastfeeding, I suspected something in my own diet was the trigger —
-              but with dozens of things to eat every day, I could never remember what I'd actually
-              had. That's how AllyBaby was born: a way to log what mom eats and what baby eats,
-              side by side, to help find the pattern. I like to think of it as a gift for my
-              daughter.
-            </div>
-            <div class="project-links">
-              <a class="project-link project-link--solid" href="https://apps.apple.com/gb/app/allybaby-allergy-tracker/id6762079294" target="_blank" rel="noopener">Download on the App Store</a>
-              <a class="project-link project-link--outline" href="https://lucyhao.github.io/allybaby-website/" target="_blank" rel="noopener">Visit site →</a>
+        <div class="projects-grid">
+
+          <!-- AllyBaby -->
+          <div class="project-card project-card--allybaby">
+            <img class="project-icon" src="images/allybaby-icon.png" alt="AllyBaby app icon" />
+            <div class="project-body">
+              <div class="project-top-row">
+                <span class="project-name">AllyBaby</span>
+                <span class="project-tag">Allergy tracker for breastfeeding families</span>
+              </div>
+              <p class="project-desc">
+                Tracks both mom's diet and baby's symptoms to automatically surface which foods in
+                breast milk may be triggering a baby's reactions — the only allergy tracker built
+                specifically for nursing families.
+              </p>
+              <div class="project-story">
+                When my daughter was three months old, she developed eczema — her face and knees
+                turning dry, red, and itchy, until it got bad enough to start weeping. I took her to
+                the GP more times than I can count, but nothing really helped. Since I was
+                exclusively breastfeeding, I suspected something in my own diet was the trigger —
+                but with dozens of things to eat every day, I could never remember what I'd actually
+                had. That's how AllyBaby was born: a way to log what mom eats and what baby eats,
+                side by side, to help find the pattern. I like to think of it as a gift for my
+                daughter.
+              </div>
+              <div class="project-links">
+                <a class="btn-appstore" href="https://apps.apple.com/gb/app/allybaby-allergy-tracker/id6762079294" target="_blank" rel="noopener">
+                  <svg class="btn-appstore-logo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                  <span class="btn-appstore-text"><small>Download on the</small><strong>App Store</strong></span>
+                </a>
+                <a class="project-link project-link--outline" href="https://lucyhao.github.io/allybaby-website/" target="_blank" rel="noopener">Visit site →</a>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- GoOutToday -->
-        <div class="project-card project-card--goouttoday">
-          <div class="project-icon">🗺️</div>
-          <div class="project-body">
-            <div class="project-top-row">
-              <span class="project-name">GoOutToday</span>
-              <span class="project-tag">Today's day out, decided for you</span>
-            </div>
-            <p class="project-desc">
-              Picks a family day out around today's weather, your drive-time limit, and your
-              kids' ages — free on iOS, currently covering Greater Manchester &amp; the North West
-              of England.
-            </p>
-            <div class="project-story">
-              We also have an older son, and weekends always left us stuck on the same question:
-              where do we take him today? I'd scroll through Facebook groups and Xiaohongshu for
-              ideas, but there was either too much to sift through, or I'd be hunting one post at
-              a time. So I built an app that just recommends a place directly — and lets me set a
-              reminder so I don't forget it. Just last week, with no idea where to go, it
-              suggested somewhere we'd never been. The whole family went, and came back thinking,
-              "actually, that was pretty good." I like to think of it as a gift for my son.
-            </div>
-            <div class="project-links">
-              <a class="project-link project-link--solid" href="https://apps.apple.com/us/app/goouttoday/id6811061756" target="_blank" rel="noopener">Download on the App Store</a>
-              <a class="project-link project-link--outline" href="https://lucyhao.github.io/GoOutToday-website/" target="_blank" rel="noopener">Visit site →</a>
+          <!-- GoOutToday -->
+          <div class="project-card project-card--goouttoday">
+            <img class="project-icon" src="images/goouttoday-icon.png" alt="GoOutToday app icon" />
+            <div class="project-body">
+              <div class="project-top-row">
+                <span class="project-name">GoOutToday</span>
+                <span class="project-tag">Today's day out, decided for you</span>
+              </div>
+              <p class="project-desc">
+                Picks a family day out around today's weather, your drive-time limit, and your
+                kids' ages — free on iOS, currently covering Greater Manchester &amp; the North West
+                of England.
+              </p>
+              <div class="project-story">
+                We also have an older son, and weekends always left us stuck on the same question:
+                where do we take him today? I'd scroll through Facebook groups and Xiaohongshu for
+                ideas, but there was either too much to sift through, or I'd be hunting one post at
+                a time. So I built an app that just recommends a place directly — and lets me set a
+                reminder so I don't forget it. Just last week, with no idea where to go, it
+                suggested somewhere we'd never been. The whole family went, and came back thinking,
+                "actually, that was pretty good." I like to think of it as a gift for my son.
+              </div>
+              <div class="project-links">
+                <a class="btn-appstore" href="https://apps.apple.com/us/app/goouttoday/id6811061756" target="_blank" rel="noopener">
+                  <svg class="btn-appstore-logo" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+                  <span class="btn-appstore-text"><small>Download on the</small><strong>App Store</strong></span>
+                </a>
+                <a class="project-link project-link--outline" href="https://lucyhao.github.io/GoOutToday-website/" target="_blank" rel="noopener">Visit site →</a>
+              </div>
             </div>
           </div>
+
         </div>
+      </section>
 
-      </div>
-    </div>
-  </section>
+      <!-- Contact -->
+      <section class="tab-panel" id="tab-contact" role="tabpanel" hidden>
+        <div class="section-eyebrow">Contact</div>
+        <h2 class="section-title">Say hello</h2>
+        <p class="contact-intro">Questions, feedback, or just want to chat about what I'm building — my inbox is open.</p>
+        <div class="contact-links">
+          <a class="btn-email" href="mailto:lucyhao987@gmail.com">lucyhao987@gmail.com</a>
+          <a class="btn-kofi" href="https://ko-fi.com/hl580388" target="_blank" rel="noopener">☕ Support me on Ko-fi</a>
+        </div>
+      </section>
 
-  <!-- ── Contact ──────────────────────────────────────────────── -->
-  <section class="contact section" id="contact">
-    <div class="container">
-      <h2>Say hello</h2>
-      <p>Questions, feedback, or just want to chat about what I'm building — my inbox is open.</p>
-      <div class="contact-links">
-        <a class="btn-email" href="mailto:lucyhao987@gmail.com">lucyhao987@gmail.com</a>
-        <a class="btn-kofi" href="https://ko-fi.com/hl580388" target="_blank" rel="noopener">☕ Support me on Ko-fi</a>
-      </div>
-    </div>
-  </section>
+      <footer class="footer">© 2026 Hao Li</footer>
 
-  <!-- ── Footer ───────────────────────────────────────────────── -->
-  <footer class="footer">
-    <div class="container footer-inner">
-      © 2026 Hao Li
-    </div>
-  </footer>
+    </main>
+  </div>
+
+  <script>
+    (function () {
+      var tabs = document.querySelectorAll('.side-tab');
+      var panels = document.querySelectorAll('.tab-panel');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          var target = tab.getAttribute('data-tab');
+          tabs.forEach(function (t) {
+            var active = t === tab;
+            t.classList.toggle('side-tab--active', active);
+            t.setAttribute('aria-selected', String(active));
+          });
+          panels.forEach(function (panel) {
+            var active = panel.id === 'tab-' + target;
+            panel.classList.toggle('tab-panel--active', active);
+            panel.hidden = !active;
+          });
+          document.querySelector('.content').scrollTo({ top: 0, behavior: 'instant' });
+        });
+      });
+    })();
+  </script>
 
 </body>
 </html>
