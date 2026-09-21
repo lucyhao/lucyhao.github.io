@@ -339,6 +339,13 @@ body {
   padding-top: 48px;
   color: var(--muted);
   font-size: 0.82rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.visitor-badge {
+  height: 18px;
+  vertical-align: middle;
 }
 
 /* ── Responsive ──────────────────────────────────────────── */
